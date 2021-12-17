@@ -31,6 +31,7 @@ const GROUPS = [
 ];
 
 async function searchGithub(query: string) {
+  // TODO: Implement oauth
   const githubClient = new GraphQLClient("https://api.github.com/graphql", {
     headers: {
       Authorization: `bearer ${process.env.GITHUB_PAT}`,
