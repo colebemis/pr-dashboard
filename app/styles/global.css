@@ -1,0 +1,25 @@
+:root {
+  --text: #000;
+  --bg: #fff;
+  --link: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff;
+    --bg: #111;
+    --link: dodgerblue;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link);
+}
