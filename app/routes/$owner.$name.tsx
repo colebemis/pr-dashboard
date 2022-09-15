@@ -101,7 +101,7 @@ export default function Index() {
   let { repository, data } = useLoaderData<PageData>();
 
   return (
-    <div style={{ padding: 16 }}>
+    <div style={{ padding: 16, width: '40rem', margin: '0 auto' }}>
       <h1 style={{ marginTop: 0 }}>
         <a href={`https://github.com/${repository}`}>{repository}</a> pull
         requests
