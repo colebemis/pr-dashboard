@@ -108,10 +108,10 @@ export default function Index() {
       </h1>
       <div>
         {data.map(({ name, results }) => (
-          <div key={name}>
-            <h2>
-              {name} ({results.length})
-            </h2>
+          <details key={name}>
+            <summary>
+              <strong style={{ fontSize: '1.5rem' }}>{name} ({results.length})</strong>
+            </summary>
             <ul>
               {results.map(({ title, url, author }) => (
                 <li key={title}>
@@ -122,7 +122,7 @@ export default function Index() {
                 </li>
               ))}
             </ul>
-          </div>
+          </details>
         ))}
       </div>
     </div>
