@@ -18,7 +18,7 @@ const GROUPS = [
   },
   {
     name: "👀 Ready for review",
-    query: "draft:false status:success review:none",
+    query: "draft:false status:success review:none -head:changeset-release/main",
   },
   {
     name: "🚀 Ready to merge",
