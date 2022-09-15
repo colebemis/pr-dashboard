@@ -18,11 +18,11 @@ const GROUPS = [
   },
   {
     name: "👀 Ready for review",
-    query: "draft:false status:success review:none -head:changeset-release/main",
+    query: "draft:false -status:failure review:none -head:changeset-release/main",
   },
   {
     name: "🚀 Ready to merge",
-    query: "draft:false status:success review:approved",
+    query: "draft:false -status:failure review:approved",
   },
   {
     name: "🔜 Next release",
